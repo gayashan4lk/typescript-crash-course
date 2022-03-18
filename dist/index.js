@@ -24,3 +24,37 @@ employee = [
     [3, "Dan Brown"]
 ];
 console.log(employee);
+// Union
+let productId;
+productId = 22;
+console.log(productId);
+productId = "22";
+console.log(productId);
+// Enum
+var basicDirection;
+(function (basicDirection) {
+    basicDirection[basicDirection["up"] = 0] = "up";
+    basicDirection[basicDirection["down"] = 1] = "down";
+    basicDirection[basicDirection["left"] = 2] = "left";
+    basicDirection[basicDirection["right"] = 3] = "right";
+})(basicDirection || (basicDirection = {}));
+console.log(basicDirection.up);
+console.log(basicDirection.right);
+var menu;
+(function (menu) {
+    menu[menu["file"] = 1] = "file";
+    menu[menu["edit"] = 2] = "edit";
+    menu[menu["search"] = 3] = "search";
+    menu[menu["help"] = 4] = "help";
+})(menu || (menu = {}));
+console.log(menu.file);
+console.log(menu.help);
+var mainMenu;
+(function (mainMenu) {
+    mainMenu["file"] = "file";
+    mainMenu["edit"] = "edit";
+    mainMenu["search"] = "search";
+    mainMenu["help"] = "help";
+})(mainMenu || (mainMenu = {}));
+console.log(mainMenu.file);
+console.log(mainMenu.search);
