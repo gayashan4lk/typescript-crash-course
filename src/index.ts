@@ -62,3 +62,26 @@ enum mainMenu {
 }
 console.log(mainMenu.file);
 console.log(mainMenu.search);
+
+// Objects
+const user: {
+  id: number,
+  name: string
+} = {
+  id: 1,
+  name: "Pablo Neruda",
+}
+
+console.log(user);
+
+type Robot = {
+  id: number,
+  model: string
+}
+
+const terminator: Robot = {
+  id: 1,
+  model: "T-800"
+}
+
+console.log(terminator);

@@ -58,3 +58,14 @@ var mainMenu;
 })(mainMenu || (mainMenu = {}));
 console.log(mainMenu.file);
 console.log(mainMenu.search);
+// Objects
+const user = {
+    id: 1,
+    name: "Pablo Neruda",
+};
+console.log(user);
+const terminator = {
+    id: 1,
+    model: "T-800"
+};
+console.log(terminator);
